@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú F1 Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #d50000;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 40px; /* Imagen del logo reducida */
+            margin-right: 15px;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #d50000;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .menu > li > a:hover {
+            background-color: #9b0000;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            min-width: 180px;
+        }
+
+        .submenu li a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid #555;
+        }
+
+        .submenu li a:hover {
+            background-color: #666;
+        }
+
+        .banner-publicidad {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .banner-publicidad img {
+            max-width: 90%;
+            border: 2px solid #d50000;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body background="C:/Users/Grupo 6.1/Documents/PAGINA F1/imagenes pagina/11.jpg">
+
+    <header>
+        <img src="C:/Users/Grupo 6.1/Documents/PAGINA F1/imagenes pagina/LOGO PAGINA.jpg" alt="F1 World Logo">
+        <h1>F1 World</h1>
+    </header>
+
+    <ul class="menu">
+        <li><a href="#">🏁 Inicio</a></li>
+        <li>
+            <a href="#" class="toggle">📅 Próximas Carreras ⌄</a>
+            <ul class="submenu">
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/GranPremiodeAustralia.html">GP de Australia</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de China.html">GP de China</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Japon.html">GP de Japón</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Baréin.html">GP de Baréin</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Arabia Saudita.html">GP de Arabia Saudita</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Miami.html">GP de Estados Unidos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Italia.html">GP de Italia</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Monaco.html">GP de Mónaco</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de España.html">GP de España</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Canada.html">GP de Canadá</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Austria.html">GP de Austria</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Gran Bretaña.html">GP de United Kingdom</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Bélgica.html">GP de Bélgica</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Hungría.html">GP de Hungría</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Países Bajos.html">GP de Países Bajos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Italia.html">GP de Italia</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Azerbaiyán.html">GP de Azerbaiyán</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Azerbaiyán.html">GP de Singapur</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Estados Unidos.html">GP de Estados Unidos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Mexico.html">GP de México</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Brasil.html">GP de Brasil</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Las Vegas.html">GP de Estados Unidos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Qatar.html">GP de Qatar</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Abu Dabi.html">GP de United Arab Emirates</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#" class="toggle">🏆 Resultados ⌄</a>
+            <ul class="submenu">
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/GranPremiodeAustralia.html">GP de Australia</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de China.html">GP de China</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Japon.html">GP de Japón</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Baréin.html">GP de Baréin</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Arabia Saudita.html">GP de Arabia Saudita</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Miami.html">GP de Estados Unidos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Italia.html">GP de Italia</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Monaco.html">GP de Mónaco</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de España.html">GP de España</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Canada.html">GP de Canadá</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Austria.html">GP de Austria</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Gran Bretaña.html">GP de United Kingdom</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Bélgica.html">GP de Bélgica</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Hungría.html">GP de Hungría</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Países Bajos.html">GP de Países Bajos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Italia.html">GP de Italia</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Azerbaiyán.html">GP de Azerbaiyán</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Azerbaiyán.html">GP de Singapur</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Estados Unidos.html">GP de Estados Unidos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Mexico.html">GP de México</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Brasil.html">GP de Brasil</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Las Vegas.html">GP de Estados Unidos</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Qatar.html">GP de Qatar</a></li>
+                <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Gran Premio de Abu Dabi.html">GP de United Arab Emirates</a></li>
+            </ul>
+        </li>
+        <li><a href="C:/Users/Grupo 6.1/Documents/PAGINA F1/Posiciones%20de%20pilotos.html">🏎️ Posiciones de los Pilotos</a></li>
+    </ul>
+    
+    <h1 align="center">F1 World</h1>
+    <p>
+        F1 World es una página dedicada a brindar información sobre el mundo de la Fórmula 1. El objetivo de esta página es mantenerte actualizado con información detallada de cada Gran Premio, estadísticas de los pilotos y equipos, así como las últimas novedades del campeonato.
+    </p>
+    <h3>¿Qué encontrarás en F1 World?</h3>
+    <strong>Calendario de Carreras📅</strong>
+    <p>Aquí podrás consultar el cronograma completo de la temporada, con fechas, circuitos y horarios de cada Gran Premio. Además, ofrecemos detalles sobre cada pista, sus características, récords y los desafíos que presentan para los pilotos y equipos.</p>
+    <strong>Resultados y Clasificaciones🏆</strong>
+    <p>Sigue los resultados de cada carrera y revisa las clasificaciones generales de pilotos y constructores. Con la actualización que se le da a la página, te permitirá conocer los puntos obtenidos por cada competidor y cómo evolucionan sus posiciones a lo largo del campeonato.</p>
+    <strong>Noticias y Novedades📰</strong>
+    <p>Mantente al día con las últimas noticias del mundo de la Fórmula 1. Desde anuncios de fichajes y cambios en las escuderías hasta modificaciones en el reglamento y rumores sobre el futuro del deporte, aquí encontrarás toda la información más relevante.</p>
+    <strong>Historia y Momentos Icónicos</strong>
+    <p>Revive los momentos más memorables de la Fórmula 1 con secciones dedicadas a su historia, sus leyendas y los hitos que han marcado el deporte. Desde batallas épicas en la pista hasta récords impresionantes, en F1 World recordaremos la grandeza de la F1 a lo largo de los años.</p>
+    <strong>Nuestra visión</strong>
+    <p>En F1 World, creemos que la Fórmula 1 es más que un deporte; es una combinación de ingeniería, estrategia y talento humano que lleva la emoción del automovilismo a su máxima expresión. Queremos ofrecer un espacio donde tanto fanáticos veteranos como nuevos seguidores puedan encontrar información de calidad y disfrutar del campeonato de una manera más inmersiva y detallada.</p>
+
+    <!-- PUBLICIDAD -->
+    <div class="banner-publicidad">
+        <img src="C:/Users/Grupo 6.1/Documents/PAGINA F1/imagenes pagina/Artur_Lureano_Celso_Publicidad.jpg" alt="Publicidad F1">
+    </div>
+
+    <h1>Bienvenido a F1 World, el lugar donde la velocidad, la emoción y la pasión por la Fórmula 1 se viven al máximo.🏁</h1>
+    <script>
+        // Seleccionamos todos los botones del menú que tienen submenús
+        const toggleMenus = document.querySelectorAll(".toggle");
+
+        toggleMenus.forEach(menu => {
+            menu.addEventListener("click", function (event) {
+                event.preventDefault();
+                document.querySelectorAll(".submenu").forEach(sub => {
+                    if (sub !== menu.nextElementSibling) {
+                        sub.style.display = "none";
+                    }
+                });
+
+                let submenu = menu.nextElementSibling;
+                submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+            });
+        });
+
+        // Cierra los submenús si se hace clic fuera
+        document.addEventListener("click", function (event) {
+            if (!event.target.closest(".menu")) {
+                document.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.display = "none";
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
